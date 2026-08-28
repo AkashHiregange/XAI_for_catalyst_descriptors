@@ -7,6 +7,7 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import KFold, cross_val_predict, cross_val_score, cross_validate
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, make_scorer
 import shap
+from xgboost import XGBRegressor
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 
 def make_shap_plots(features, properties, model_instance, model_name, bar=True):
