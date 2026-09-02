@@ -28,7 +28,7 @@ def tune_models(features,properties,estimator,param_grid,config,model_name):
         search.fit(X_train, y_train)
 
         best_parameters[target] = search.best_params_
-        cv_scores[target] = search.best_score_
+        #cv_scores[target] = search.best_score_
 
         print(f"{target}: best parameters = {search.best_params_}")
 
@@ -37,4 +37,4 @@ def tune_models(features,properties,estimator,param_grid,config,model_name):
     with output_path.open("w", encoding="utf-8") as file:
         json.dump(best_parameters, file, indent=4)
 
-    return best_parameters, cv_scores
+    return best_parameters
