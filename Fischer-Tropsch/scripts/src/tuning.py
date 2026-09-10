@@ -18,6 +18,9 @@ def tune_models(features,properties,estimator,param_grid,config,model_name):
     cv_scores = {}
 
     for target in properties.columns:
+        print(--*15)
+        print(f'tuning for target property {target}')
+        print(--*15)
         y = properties[target]
         #consitent y_train selection
         y_train = y.loc[X_train.index]
