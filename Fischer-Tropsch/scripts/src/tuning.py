@@ -35,9 +35,9 @@ def tune_models(features,properties,estimator,param_grid,config,model_name):
 
         print(f"{target}: best parameters = {search.best_params_}")
 
-    output_path = (config.output_dir / f"{model_name}_best_parameters.json")
+    output_path = f"{config.output_dir}_{model_name}_best_parameters.json"
 
-    with output_path.open("w", encoding="utf-8") as file:
+    with open(output_path, "w", encoding="utf-8") as file:
         json.dump(best_parameters, file, indent=4)
 
     return best_parameters

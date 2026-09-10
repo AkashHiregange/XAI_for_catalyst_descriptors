@@ -19,7 +19,7 @@ def evaluate_models(features,properties,estimator,best_parameters,config,model_n
         X_train, X_test, y_train, y_test = train_test_split(
             features,properties[target],test_size=config.test_size,random_state=config.random_state)
 
-        model = estimator(**best_parameters[target])
+        model = clone(estimator).set_params(**best_parameters[target])
         model.fit(X_train, y_train)
 
         for split, X_part, y_part in (("train", X_train, y_train),("test", X_test, y_test)):
