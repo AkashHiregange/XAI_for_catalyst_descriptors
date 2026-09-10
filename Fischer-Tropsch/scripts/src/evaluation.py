@@ -25,8 +25,7 @@ def evaluate_models(features,properties,estimator,best_parameters,config,model_n
         for split, X_part, y_part in (("train", X_train, y_train),("test", X_test, y_test)):
             predictions = model.predict(X_part)
 
-            results.append({"model": model_name,"target": target,"split": split,
-                            "r2": r2_score(y_part, predictions),
+            results.append({"model": model_name,"target": target,"split": split,"r2": r2_score(y_part, predictions),
                             "mae": mean_absolute_error(y_part, predictions),
                             "rmse": mean_squared_error(y_part, predictions) ** 0.5})
 
