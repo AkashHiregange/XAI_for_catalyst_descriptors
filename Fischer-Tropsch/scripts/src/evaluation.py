@@ -31,7 +31,7 @@ def evaluate_models(features,properties,estimator,best_parameters,config,model_n
 
         model_path = (f"{config.output_dir}/{model_name}_{target}_model.pkl")
 
-        with model_path.open("wb") as file:
+        with open(model_path, "wb") as file:
             pickle.dump(model, file)
 
     results_df = pd.DataFrame(results)
