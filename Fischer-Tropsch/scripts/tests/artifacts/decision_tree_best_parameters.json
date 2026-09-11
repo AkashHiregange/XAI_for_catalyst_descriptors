@@ -1,8 +1,8 @@
 {
     "CO(conv)": {
-        "max_depth": 10,
+        "max_depth": 5,
         "min_samples_leaf": 5,
-        "min_samples_split": 10,
+        "min_samples_split": 20,
         "splitter": "random"
     },
     "CH4": {
@@ -18,9 +18,9 @@
         "splitter": "random"
     },
     "C2-C4": {
-        "max_depth": 10,
+        "max_depth": 5,
         "min_samples_leaf": 5,
-        "min_samples_split": 20,
+        "min_samples_split": 10,
         "splitter": "random"
     },
     "\u04215+": {

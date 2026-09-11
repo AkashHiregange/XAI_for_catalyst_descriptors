@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import shap
 
 
-def plot_shap(model,X_background,X_explain,target_name,output_dir,include_bar=True):
+def plot_shap(model,X_background,target_name,output_dir,include_bar=True):
     """This function generates SHAP summary plots for a fitted model."""
 
     output_dir = Path(output_dir)

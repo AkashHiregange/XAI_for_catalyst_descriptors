@@ -1,0 +1,32 @@
+{
+    "CO(conv)": {
+        "max_depth": 10,
+        "min_samples_leaf": 5,
+        "n_estimators": 200
+    },
+    "CH4": {
+        "max_depth": 10,
+        "min_samples_leaf": 5,
+        "n_estimators": 100
+    },
+    "CO2": {
+        "max_depth": 5,
+        "min_samples_leaf": 5,
+        "n_estimators": 250
+    },
+    "C2-C4": {
+        "max_depth": 15,
+        "min_samples_leaf": 5,
+        "n_estimators": 250
+    },
+    "\u04215+": {
+        "max_depth": 10,
+        "min_samples_leaf": 5,
+        "n_estimators": 250
+    },
+    "Mult": {
+        "max_depth": 15,
+        "min_samples_leaf": 5,
+        "n_estimators": 200
+    }
+}
