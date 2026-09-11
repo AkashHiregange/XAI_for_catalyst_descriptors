@@ -5,7 +5,7 @@ import shap
 
 
 def plot_shap(model,X_background,X_explain,target_name,output_dir,include_bar=True):
-    """Generate SHAP summary plots for a fitted model."""
+    """This function generates SHAP summary plots for a fitted model."""
 
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
